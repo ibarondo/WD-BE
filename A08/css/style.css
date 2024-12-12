@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9e3;
+}
+
+/* Navbar */
+.hoverable-text {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hoverable-text:hover{
+    background-color: transparent !important;
+    transform: scale(1.1);
+}
+
+/* .dropdown-menu, .w3-dropdown-hover:hover {
+  color: black !important;
+  background-color: #fff9e3 !important;
+} */
+
+.dropdown-item:hover {
+  color: #fff9e3 !important;
+  background-color:  black !important;
+}
+
+.dropdown-toggle {
+    background-color: transparent !important;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background-color: #fff9e3 !important;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+.dropdown-menu .dropdown-item, .w3-bar-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1.5;
+    
+}
+
+.w3-top, .footer {
+    background: linear-gradient(
+    to right,
+    rgba(130, 191, 255, 0.9),
+    rgba(255, 102, 102, 0.8),
+    rgba(255, 204, 102, 0.8),
+    rgba(102, 204, 102, 0.9),
+    rgba(153, 102, 255, 0.8)
+  );
+}
+
+/* Card Content */
+.card {
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+}
+
+.card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    transition: .5s ease;
+}
+
+.card-image-wrapper:hover img {
+    transform: scale(1.1);
+    filter: brightness(45%);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff9e3;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .card-body-overlay {
+    opacity: 1;
+}
+
+.card-title {
+    font-size: 25px;
+    font-weight: 600;
+}
